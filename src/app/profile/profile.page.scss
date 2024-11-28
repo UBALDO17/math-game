@@ -1,0 +1,84 @@
+* {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.custom-toolbar {
+    --background: #004ba0;
+    --color: #ffffff;
+    padding: 8px 12px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.profile-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.profile-avatar {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border: 3px solid #004ba0;
+    /* Same as the primary color */
+    border-radius: 50%;
+}
+
+.profile-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    position: relative;
+}
+
+.profile-name {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #004ba0;
+    /* Matches toolbar color */
+}
+
+.edit-icon {
+    font-size: 1.2rem;
+    color: #198754;
+    /* Green for edit icon */
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.highscores-container {
+    margin-top: 30px;
+    padding: 10px 20px;
+}
+
+ion-list {
+    --background: #f8f9fa;
+    /* Light background for high scores list */
+}
+
+ion-item {
+    --background: #ffffff;
+    /* White background for each item */
+    margin: 5px 0;
+    border-radius: 5px;
+    --ion-item-background: #e9ecef;
+    /* Subtle gray for item background */
+}
+
+ion-badge {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+ion-tab-bar {
+    --background: #004ba0;
+    --color: #ffffff;
+    --color-selected: #ffd700;
+    font-size: 1rem;
+}
+
+ion-tab-button {
+    color: #ffffff;
+    /* White text for the tab icons */
+}

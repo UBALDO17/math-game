@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar class="custom-toolbar">
+    <ion-title>🚀 Math Game</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="welcome-container">
+    <ion-text color="primary">
+      <h1 class="animate-title">Welcome to Math Game! 🎉</h1>
+    </ion-text>
+    <p class="animate-text">
+      Ready to test your math skills and conquer exciting puzzles? Dive into
+      challenges like addition, subtraction, multiplication, and division.
+      Beat high scores, and become the ultimate math champion! 🧮✨
+    </p>
+
+    <ion-button expand="block" color="success" routerLink="/games" class="animate-button">
+      🎮 Start Playing
+    </ion-button>
+  </div>
+</ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="games">
+      <ion-icon name="game-controller"></ion-icon>
+      <ion-label>Games</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="profile">
+      <ion-icon name="person"></ion-icon>
+      <ion-label>Profile</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>

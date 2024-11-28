@@ -1,0 +1,104 @@
+* {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.custom-toolbar {
+  --background: #004ba0;
+  --color: #ffffff;
+  padding: 8px 12px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+ion-title {
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+
+ion-content {
+  --background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #e0f7fa;
+}
+
+.welcome-container {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.animate-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00bcd4;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-out;
+}
+
+.animate-text {
+  font-size: 1.3rem;
+  color: #b2ebf2;
+  margin: 20px 0;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  animation: slideIn 1.5s ease-out;
+}
+
+.animate-button {
+  font-size: 1.1rem;
+  background: linear-gradient(135deg, #0072ff, #00c6ff);
+  color: #ffffff;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  animation: pulse 2s infinite;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.animate-button:hover {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  transform: scale(1.1);
+}
+
+ion-tab-bar {
+  --background: #004ba0;
+  --color: #ffffff;
+  --color-selected: #ffd700;
+  font-size: 1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
