@@ -11,3 +11,24 @@
     </ion-toolbar>
   </ion-header>
 </ion-content>
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="home" routerLink="/tabs/home" routerLinkActive="active">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="games" routerLink="/tabs/games" routerLinkActive="active">
+      <ion-icon name="game-controller"></ion-icon>
+      <ion-label>Games</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="profile" routerLink="/tabs/profile" routerLinkActive="active">
+      <ion-icon name="person"></ion-icon>
+      <ion-label>Profile</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+
+  <ion-router-outlet></ion-router-outlet>
+</ion-tabs>
